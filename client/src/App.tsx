@@ -1,4 +1,6 @@
 import './App.css';
+import {Dashboard} from "./pages/dashboard";
+import {Auth} from "./pages/auth";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 
 function App() {
@@ -6,8 +8,8 @@ function App() {
     <Router>
       <div className = "app-container">
         <Routes>
-          <Route path = "/" element={<h1>Dashboard</h1>}/>
-          <Route path = "/auth" element={<h1>Signin</h1>}/>
+          <Route path = "/" element={<Dashboard /> }/>
+          <Route path = "/auth" element={<Auth/>}/>
 
         </Routes>
       </div>
