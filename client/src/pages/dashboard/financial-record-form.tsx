@@ -15,7 +15,7 @@ export const FinancialRecordForm = () => {
         event.preventDefault();
 
         const newRecord = {
-            userID: user?.id ?? "",
+            userId: user?.id ?? "",
             date: new Date(),
             description: description,
             amount: parseFloat(amount),
